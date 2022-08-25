@@ -1,0 +1,22 @@
+{
+    "name": "Bitcoin Prices",
+    "version": "1.0.0",
+    "description": "Bitcoin Prices",
+    "manifest_version": 2,
+    "author": "Sharon Chen and Jimmy Lim",
+    "browser_action": {
+        "default_popup": "index.html",
+        "default_title": "Bitcoin Prices"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+                "http://*/*",
+                "https://*/*"
+            ],
+            "js": [
+                "script.js"
+            ]
+        }
+    ]
+}
